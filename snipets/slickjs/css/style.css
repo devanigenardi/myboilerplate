@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'proxima-nova-regular';
+  src: url("./fonts/proxima-nova-regular.ttf") format("woff");
+  src: url("./fonts/proxima-nova-regular.otf") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'proxima-nova-light';
+  src: url("./fonts/Proxima-Nova-Light.otf") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+p {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+p,
+a {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0px;
+}
+
+body .wrapper {
+  widows: 100%;
+  overflow: hidden;
+}
+
+body .wrapper section, body .wrapper .section {
+  overflow: hidden;
+  position: relative;
+}
+
+.alert {
+  color: green;
+}
+
+.slick-dotted.slick-slider,
+.slick-list {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+.home {
+  height: 100vh;
+}
+
+.home .home__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+  width: 1600px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+}
+
+.home .home__nav--alt {
+  background: red;
+}
+
+.home .home__nav .logo img {
+  width: 160px;
+  height: auto;
+}
+
+.home .home__nav .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.home .home__nav .nav__list .nav__item {
+  list-style-type: none;
+  margin: 0 2rem;
+}
+
+.home .home__nav .nav__list .nav__item a {
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.home .carousel .slick-slide .carousel__content .carousel__info {
+  position: absolute;
+  max-width: 1600px;
+  width: 100%;
+  height: 30vh;
+  background-color: red;
+  margin: auto;
+  top: -20vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.home .carousel .slick-slide .carousel__content img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */

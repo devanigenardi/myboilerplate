@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0px;
+    .wrapper {
+        widows: 100%;
+        overflow: hidden;
+    
+        section, .section {
+            overflow: hidden;
+            position: relative;
+        }
+    }
+}
