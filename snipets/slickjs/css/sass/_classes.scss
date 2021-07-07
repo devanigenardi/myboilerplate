@@ -3,7 +3,9 @@
 }
 
 .slick-dotted.slick-slider,
-.slick-list {
+.slick-list,
+.slick-slide,
+.carousel__content {
     width: 100vw!important;
     height: 100vh!important;
 }

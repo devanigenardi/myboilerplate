@@ -47,7 +47,11 @@ body .wrapper {
 
 body .wrapper section, body .wrapper .section {
   overflow: hidden;
-  position: relative;
+}
+
+body .wrapper .header {
+  height: 100vh;
+  width: 100vw;
 }
 
 .alert {
@@ -55,16 +59,14 @@ body .wrapper section, body .wrapper .section {
 }
 
 .slick-dotted.slick-slider,
-.slick-list {
+.slick-list,
+.slick-slide,
+.carousel__content {
   width: 100vw !important;
   height: 100vh !important;
 }
 
-.home {
-  height: 100vh;
-}
-
-.home .home__nav {
+.home__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,16 +82,16 @@ body .wrapper section, body .wrapper .section {
   z-index: 1;
 }
 
-.home .home__nav--alt {
+.home__nav--alt {
   background: red;
 }
 
-.home .home__nav .logo img {
+.home__nav .logo img {
   width: 160px;
   height: auto;
 }
 
-.home .home__nav .nav__list {
+.home__nav .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,35 +101,59 @@ body .wrapper section, body .wrapper .section {
           flex-direction: row;
 }
 
-.home .home__nav .nav__list .nav__item {
+.home__nav .nav__list .nav__item {
   list-style-type: none;
   margin: 0 2rem;
 }
 
-.home .home__nav .nav__list .nav__item a {
+.home__nav .nav__list .nav__item a {
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
 }
 
-.home .carousel .slick-slide .carousel__content .carousel__info {
+.carousel .slick-slide .carousel__content {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel .slick-slide .carousel__content .carousel__info {
   position: absolute;
-  max-width: 1600px;
   width: 100%;
   height: 30vh;
   background-color: red;
   margin: auto;
-  top: -20vh;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
 
-.home .carousel .slick-slide .carousel__content img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+.carousel .slick-slide .carousel__content .carousel__info > * {
+  margin-left: calc(4vw - 0.5rem);
+}
+
+.carousel .slick-slide .carousel__content--sld1 {
+  background-image: url("https://picsum.photos/300/200?random=1");
+}
+
+.carousel .slick-slide .carousel__content--sld2 {
+  background-image: url("https://picsum.photos/300/200?random=2");
+}
+
+.carousel .slick-slide .carousel__content--sld3 {
+  background-image: url("https://picsum.photos/300/200?random=3");
+}
+
+.carousel .slick-dots {
+  z-index: 2;
+  top: 50%;
+  width: 90px;
+  margin-left: 4vw;
+  height: 13px;
+  background-color: green;
+  -webkit-transform: translateX(-50%) rotate(-90deg);
+          transform: translateX(-50%) rotate(-90deg);
 }
 /*# sourceMappingURL=style.css.map */
